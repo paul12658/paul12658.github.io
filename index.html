@@ -145,10 +145,38 @@
 						</div>
 						<div class="col-6 col-12-medium">
 							<h3>Experience</h3>
-							<ul>
-								<li><strong>Junior Penetration Tester</strong> – Freelance (2025 - Present)</li>
-								<li><strong>Full Stack Developer</strong> – Remote Projects (2025- Present)</li>
-								<li><strong>QA Intern</strong> – TechLabs Africa (2025)</li>
+<ul>
+	<li>
+		<a href=" #" target="_blank">
+			<strong>Security Specialist</strong> – Cybershujaa (Jan 2025 - Present)
+		</a>
+		<ul>
+			<li>Conducted vulnerability assessments on client applications using Burp Suite and OWASP ZAP.</li>
+			<li>Exploited real-world API vulnerabilities (e.g., BOLA, IDOR) in test environments like crAPI.</li>
+			<li>Delivered detailed security reports and mitigation recommendations to clients.</li>
+		</ul>
+	</li>
+	<li>
+		<a href="https://github.com/yourusername/qa-apprenticeship" target="_blank">
+			<strong>QA Apprenticeship</strong> – PLP Africa (May-July 2025)
+		</a>
+		<ul>
+			<li>Tested APIs using Postman and automated browser tests with Selenium.</li>
+			<li>Logged and tracked bugs using Jira, and improved bug reporting clarity by 30%.</li>
+			<li>Participated in sprint reviews, offering valuable QA insights for product stability.</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Full Stack Developer</strong> – Remote Projects (Jan, 2025 - Present)
+		<ul>
+			<li>Built secure full-stack applications using the MERN stack and Python Flask.</li>
+			<li>Integrated JWT authentication, role-based access control, and input validation.</li>
+			<li>Collaborated with cross-functional teams via GitHub and Agile tools like Trello/Jira.</li>
+		</ul>
+	</li>
+	
+</ul>
+
 							</ul>
 							<a href="assets/Paul-Aloo-CV.pdf" class="button icon solid fa-download" download>Download CV</a>
 						</div>
@@ -176,7 +204,7 @@
 							<input type="email" name="email" id="email" placeholder="Email" required />
 						</div>
 						<div class="col-12">
-							<input type="text" name="subject" id="subject" placeholder="Subject" />
+							<!-- <input type="text" name="subject" id="subject" placeholder="Subject" /> -->
 						</div>
 						<div class="col-12">
 							<textarea name="message" id="message" placeholder="Message" required></textarea>
@@ -192,41 +220,47 @@
 				</form>
 			</div>
 
+	
 
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/paul-odhiambo1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="https://github.com/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
+		<!-- Scripts -->
+		 
+		
+<div class="col-12">
+	<hr />
+
+	<div class="row">
+		<div class="col-6 col-12-small">
+			<h3>Contact Information</h3>
+			<ul class="contact" style="list-style: none; padding-left: 0;">
+				<li><strong>Email:</strong> <a href="mailto:paulodhiambo376@gmail.com">paulodhiambo376@gmail.com</a></li>
+				<li><strong>Phone:</strong> <a href="tel:+254748133747">+254 748 133 747</a></li>
+				<li><strong>Location:</strong> Nairobi, Kenya</li>
+			</ul>
+		</div>
+
+		<div class="col-6 col-12-small">
+			<h3>Find me on ...</h3>
+			<ul class="social">
+				<li><a href="https://www.linkedin.com/in/paul-odhiambo1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+				<li><a href="https://github.com/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr />
+</div>
+
 					<footer>
 						<ul id="copyright">
-							<li>&copy; My portfolio. All rights Reserved.</li><li>Design: <a href=""></a></li>
+							<li>&copy; My portfolio. All rights Reserved.</li><li>Cybersecurity and Junior QA Engineer: <a href=""></a></li>
 						</ul>
 					</footer>
 				</div>
 			</article>
-			
-			
+			</div>
+		</div>
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -235,37 +269,56 @@
 			<script src="assets/js/main.js"></script>
 
 <script>
+	document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("my-form");
 
   async function handleSubmit(event) {
     event.preventDefault();
     var status = document.getElementById("my-form-status");
     var data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
+
+    try {
+      const response = await fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
       if (response.ok) {
         status.innerHTML = "✅ Thanks for your submission!";
         form.reset();
       } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-          } else {
-            status.innerHTML = "❌ Oops! There was a problem submitting your form.";
-          }
-        });
+        const result = await response.json();
+        console.error("Formspree error:", result);  // 👈 This helps you debug
+
+        if (result.errors) {
+          status.innerHTML = "❌ " + result.errors.map(error => error.message).join(", ");
+        } else {
+          status.innerHTML = "❌ Unknown error occurred.";
+        }
       }
-    }).catch(error => {
-      status.innerHTML = "❌ Oops! There was a problem submitting your form.";
-    });
+    } catch (error) {
+      console.error("Network error:", error);  // 👈 Also helps if your connection fails
+      status.innerHTML = "❌ Network error. Please try again.";
+    }
   }
 
   form.addEventListener("submit", handleSubmit);
+});
+  // Optional: Add a reset button to clear the status message
+  var resetButton = document.querySelector("input[type='reset']");
+  if (resetButton) {
+	resetButton.addEventListener("click", function () {
+	  document.getElementById("my-form-status").innerHTML = "";
+	});
+  }
+
+
+
+
+
 </script>
 
 
